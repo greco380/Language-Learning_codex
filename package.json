@@ -1,23 +1,31 @@
 {
-  "name": "language-learning-codex",
-  "version": "0.1.0",
+  "name": "language-learning-app",
+  "version": "1.0.0",
+  "description": "A voice-powered language learning webapp that generates personalized curricula",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest",
-    "lint": "echo 'No lint command configured'"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.0"
+    "@anthropic-ai/sdk": "^0.9.0",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
   },
   "devDependencies": {
-    "vite": "^5.2.0",
-    "vitest": "^1.5.0"
-  }
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.0",
+    "vite": "^5.0.0"
+  },
+  "browserslist": [
+    "Chrome >= 25",
+    "Edge >= 79",
+    "Safari >= 14.1"
+  ]
 }
